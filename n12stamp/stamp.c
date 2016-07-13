@@ -11,7 +11,7 @@ void backtracking(int curr, int left, int denomIndex)
 {
   int i, j;
 
-  if (curr < 0 || left < 0 || denomIndex >= k) {
+  if (curr < 0 || left < dp[curr] || denomIndex >= k) {
     // out of range
     return;
   }
